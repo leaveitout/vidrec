@@ -19,6 +19,7 @@ def main():
 def record_video(filename='output.avi', width=640, height=480, color=True,
                  fps=20, codec='MJPG'):
 
+    # TODO: Add ability to select the camera
     # Open video
     cap = cv2.VideoCapture(1)
 
