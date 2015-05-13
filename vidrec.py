@@ -24,6 +24,7 @@ def record_video(filename='output.avi', width=640, height=480, color=True,
     cap = cv2.VideoCapture(1)
 
     # Define the codec and create the VideoWriterobject
+    # TODO: Check validity of the codec
     fourcc = cv2.VideoWriter_fourcc(*codec)
     out = cv2.VideoWriter(filename, fourcc, fps, (width, height))
 
